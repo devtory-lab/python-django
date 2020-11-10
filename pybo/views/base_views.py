@@ -10,9 +10,9 @@ def index(request):
     pybo 목록 출력
     """
     # 입력 파라미터
-    page = request.GET.get('page', '1')  # 페이지
-    kw = request.GET.get('kw', '')  # 검색어
-    so = request.GET.get('so', 'recent')  # 정렬기준
+    page = request.GET.get('page', '1')     # 페이지
+    kw = request.GET.get('kw', '')          # 검색어
+    so = request.GET.get('so', 'recent')    # 정렬기준
 
     # 정렬
     if so == 'recommend':
